@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--pagina web de una boda con invitacion-->
+<head>
+  <meta charset="utf-8">
+  <title>J & G Nuestra boda</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- font awesome css-->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- default skin -->
+  <link rel="stylesheet" class="alternate-style" type="text/css" href="css/skins/pink.css">
+</head>
+<body>
+  <!-- start header -->
+  <header class="header">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+          <div class="logo">
+            <a href="index.html">J & G</a>
+          </div>
+          <!--- navbar -->
+          <div class="nav">
+            <ul class="navbar">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Pareja</a></li>
+            <li><a href="#">Evento</a></li>
+            <li><a href="#">Fotos</a></li>
+            <li><a href="#">Mesa de regalos</a></li>
+            <li><a href="#">Asistencia</a></li>
+          </ul>
+          </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+  <!-- start home -->
+  <section class="home-section">
+    <!--- slider -->
+    <div class="slide" style="background-image: url('img/slides/slide-1.jpg');">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="home-content">
+              <p>¡Nos casamos!</p>
+              <h1>Juan Carlos & Georgina</h1>
+              <!--Agregamos un span con la cuenta regresiva-->
+              <div class="countdown" id="cuenta"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- end slider -->
+    <!--Countdown-->
+    <script src="js/simplyCountdown.min.js"></script>
+    <script src="js/countdown.js"></script>
+  </section>
+  <!-- end home -->
+  <!--Start pareja-->
+  <section class="couple-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="section-title">
+          <h2>Una pareja feliz</h2>
+      </div>
+      <div class="row">
+        <div class="couple">
+          <img src="img/groom.jpg" alt="happy couple">
+          <h3>Juan Carlos</h3>
+        </div>
+        <div class="couple">
+          <i class="fa fa-heart"></i>
+          <img src="img/bride.jpg" alt="happy couple">
+          <h3>Georgina Valdos</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End pareja-->
+  <!--Start frase con imagen de slide2-->
+  <section class="frase-section">
+    <div class="slide" style="background-image: url('img/slides/slide-2.jpg');">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="frase-content">
+            <p>¡Ven a celebrar este día lleno de amor y de dicha junto a nosotros!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End frase con imagen de slide2-->
+  <!--Start evento-->
+  <section class="event-section">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Celebra con nosotros</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- Item start-->
+        <div class="event-item">
+          <div class="event-item-inner">
+            <h3>Ceremonia religiosa</h3>
+            <span class="date">25 de mayo</span>
+            <span class="time">1:00 -11:00pm</span>
+            <p>Corazón de María</p>
+            <p>Av 8 de Julio 428, Zona Centro, 44100 Guadalajara</p>
+            <a href="https://goo.gl/maps/YEWjgTURM8bbFmUw6" class="btn">Ver más</a>
+            <img src="img/icons/flower.svg" alt="event">
+          </div>
+        </div>
+        <!-- Item end-->
+        <!-- Item start-->
+        <div class="event-item">
+          <div class="event-item-inner">
+            <h3>Recepcion</h3>
+            <span class="date">25 de mayo</span>
+            <span class="time">12:00 - 2:00am</span>
+            <p>Central Park</p>
+            <p>Great Lawn Oval, New York, NY 10024, Estados Unidos</p>
+            <a href="https://goo.gl/maps/M7BxUbwGCnfQDrTp8" class="btn">Ver más</a>
+            <img src="img/icons/flower.svg" alt="event">
+          </div>
+        </div>
+        <!-- Item end-->
+      </div>
+    </div>
+  <!--jquery-->
+  <script src="js/jquery.min.js"></script>
+  <!--main-->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
+

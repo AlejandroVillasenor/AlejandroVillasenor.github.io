@@ -3,7 +3,7 @@
 .header .nav ul li a:hover{
     color: #fb839e;
 }
-.event-section .event-item-inner::before,
+.event-section .event-item-inner:before,
 .couple-section .couple img{
     border-color:#fb839e;;
 }

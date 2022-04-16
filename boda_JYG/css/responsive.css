@@ -1,0 +1,99 @@
+@media(min-width: 768px) {
+    .header .nav{
+        display:block!important;
+    }
+}
+@media(max-width: 991px) {
+    .gallery-section .gallery-item,
+    .event-section .event-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media(max-width: 767px){
+    .header .logo{
+        padding: 8px 15px;
+    }
+    .header .hamburger-btn{
+        display: flex;
+        margin-right: 15px;
+    }
+    .header .nav{
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-color: #ffffff;
+        border-top: 1px solid #cccccc;
+        display: none;
+    }
+    .header .nav ul li{
+        display: block;
+        margin-left: 0;
+    }
+    .header .nav ul li a{
+        color: #555555;
+        padding: 10px 0;
+    }
+    .home-section .home-content h1{
+        font-size: 60px;
+    }
+    .couple-section .couple{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .couple-section .couple:nth-child(2){
+        margin-top: 50px;
+    }
+    .couple-section .couple:nth-child(2):before{
+        content: none;
+    }
+    .couple-section .couple i.fa-heart{
+        display: none;
+    }
+    .frase-section .frase-content{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .dress-section .dress-content{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .dress-section .dress-content, .dress-section .dress-img{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .dress-section .dress-img img{
+        width: 45%;
+    }
+    .event-section .event-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .event-section .event-item:nth-child(2){
+        transform: translateY(00px);
+    }
+    .event-section .event-item{
+        margin-top: 20px;
+    }
+}
+@media(max-width: 574px){
+    .rsvp-section .form{
+        padding: 40px 0px;
+    }
+    .home-section .home-content h1{
+        font-size: 53px;
+    }
+    .rsvp-section .form .input-group.w50,
+    .gift-section .gift-item,
+    .gallery-section .gallery-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .gift-section .gift-item img{
+        width: 50%;
+    }
+    .footer .footer-content h2{
+        font-size: 32px;
+    }
+    
+}

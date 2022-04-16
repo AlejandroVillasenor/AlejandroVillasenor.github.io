@@ -1,0 +1,30 @@
+/*  animaciones color rosa */
+.event-section .event-item-inner span,
+.header .nav ul li a:hover{
+    color: #fb839e;
+}
+.event-section .event-item-inner::before,
+.couple-section .couple img{
+    border-color:#fb839e;;
+}
+.couple-section .couple i.fa-heart{
+    color: #fb839e;
+}
+.btn-1,
+.rsvp-section,
+.event-section,
+.couple-section .social-links a:hover i{
+    background-color: #fb839e;
+}
+#mesaderegalos,
+#ubicacion{
+    background-color: #fb839e;
+    color: #ffffff;
+}
+.btn-1:hover,
+#mesaderegalos:hover,
+#ubicacion:hover{
+    background-color: #ffffff;
+    color: #fb839e;
+    border-color: black;
+}

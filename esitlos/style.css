@@ -90,7 +90,7 @@ a {
     cursor: pointer;
 }
 .background{
-    background-image: url(/Clase\ 1-HTML/img/banner.jpg);
+    background-image: url(/img/banner.jpg);
     background-repeat: no-repeat;
     height: 400px;
     margin: 0px 25px 0 25px;

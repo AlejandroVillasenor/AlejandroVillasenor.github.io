@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: rgb(20, 19, 19);
+    /* Reiniciamos las configuraciones default que pueda tener el navegador */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-weight: 900;
+    text-align: center;
+    color: rgb(118, 231, 42);
+    font-size: 45px;
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color : white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(59, 53, 53);
+    padding: 10px;
+}
+.navegador a:hover{
+    color: rgb(15, 211, 15);
+}
+.boton{
+    background-color: #0dd314; /* Green */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.boton:hover{
+    background-color: #1e9b23;
+    cursor: pointer;
+}
+.texto-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    background: linear-gradient(to bottom right, green, black);
+    height: 70vh;
+}
+.texto-principal p{
+    padding: 0 25px 0 25px;
+    text-align: center;
+    font-size: 16px;
+}
+img{
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    box-shadow: 0 8px 6px -6px black;
+}
+/* Correo */
+.correo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}
+/* Redes sociales */
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    background-color: rgb(51, 48, 48);
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.iconos a{
+    padding: 0 15px 0 15px;
+}
+.iconos a:hover{
+    opacity: 0.3;
+}
+/* Mensaje */
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+    background-color: rgb(46, 45, 45);
+}

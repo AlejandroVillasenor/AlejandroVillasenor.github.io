@@ -1,4 +1,10 @@
 # AlejandroVillasenor.github.io
+
 Programación para internet (CUCEI)
 
-Esta es una pagina personal realizada para al adquisición de conocimientos en el área de programación para internet.
+Villaseñor Rivas Alejandro Rodrigo.
+Código: 218414783
+Materia: Programación para internet.
+Profesor: Eduardo Rangel Heras.
+
+Esta es una pagina personal realizada en base a los conocimientos adquiridos en programación para internet con responsive design.

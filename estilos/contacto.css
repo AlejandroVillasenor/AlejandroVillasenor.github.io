@@ -2,11 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: rgb(20, 19, 19);
-    /* Reiniciamos las configuraciones default que pueda tener el navegador */
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -62,7 +59,7 @@ nav {
     align-items: center;
     padding: 30px 0 30px 0;
     background: linear-gradient(to bottom right, green, black);
-    height: 70vh;
+    height: 100vh;
 }
 .texto-principal p{
     padding: 0 25px 0 25px;
@@ -93,8 +90,8 @@ img{
     background-color: rgb(51, 48, 48);
 }
 .iconos{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
 }
 .iconos a{
@@ -118,4 +115,67 @@ footer {
     margin-top: 25px;
     font-weight: bold;
     background-color: rgb(46, 45, 45);
+}
+/* Responsive design */
+@media (max-width: 794px){
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    h3{
+        font-size: 15px;
+    }
+    nav a{
+        font-size: 11px;
+    }
+    p{
+        font-size: 12px;
+        text-align: center;
+    }
+    main{
+        display: grid;
+        grid-template-areas: "contenido" "redes" "mensaje" "correo" ;
+    }
+    .texto-principal{
+        padding: 0 10px 0 10px;
+        grid-area: contenido;
+    }
+    .correo{
+        grid-area: correo;
+        padding: 13px;
+    }
+    .redes-sociales{
+        padding: 13px;
+        grid-area: redes;
+        background-color: unset    
+    }
+    .mensaje{
+        padding: 13px;
+        grid-area: mensaje;
+        background-color: rgb(51, 48, 48);
+    }
+    .iconos{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+    #a{
+        grid-row: 3;
+    }
+    #b{
+        grid-row: 1;
+    }
+    #c{
+        grid-row: 2;
+    }
+    
+    .boton{
+        font-size: 12px;
+    }
 }

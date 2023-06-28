@@ -1,12 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: rgb(20, 19, 19);
-    /* Reiniciamos las configuraciones default que pueda tener el navegador */
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -83,8 +88,8 @@ nav {
 .habilidad{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 .habilidad img{
     width: 200px;
@@ -107,22 +112,16 @@ nav {
 .meta{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    
 }
 .metas-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 30px;
 }
 
 .meta{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 5px;
 }
 .meta p{
     margin: 20px;
@@ -156,4 +155,47 @@ footer {
     font-size: 20px;
     margin-top: 25px;
     font-weight: bold;
+}
+@media (max-width: 768px){
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+    nav a{
+        font-size: 11px;
+    }
+    .slide img{
+        height: 50vh;
+    }
+    .descripcion p{
+        font-size: 15px;
+        text-align: start;
+        margin: 14px;
+    }
+    .padre-habilidades{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .metas-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: space-around;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .video,.videoYT{
+        margin-bottom: 20px;
+    }
+    .videoYT iframe{
+        width: 100%;
+        height: 200px;
+    }
+    footer p {
+        font-size: 13px;
+    }
 }

@@ -1,28 +1,19 @@
-/* Clase pasada
-.titulo-principal{
-    font-weight: normal; 
-    font-size: 50px;
-    color:green;
-    text-align: center;
+html {
+    box-sizing: border-box;
 }
-.titulo2{
-    font-weight: 300; 
-    font-size: 25px;
-    color:greenyellow;
-    text-align: center;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
-
-h2 {
-    font-weight: 300; 
-    font-size: 25px;
-    color:aqua;
-    text-align: left;
-} */
 body{
     font-family: 'Roboto', sans-serif;
     color: white;
     background-color: rgb(20, 19, 19);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .align-items-center{
     display: flex;
@@ -57,15 +48,14 @@ a {
     margin : 0 25px 0 25px;
 }
 .container{
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto 0 auto;
 }
 
 .navegador{
     background-color: rgb(59, 53, 53);
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .navegador a{
     color: white;
@@ -96,7 +86,9 @@ a {
     height: 419px;
     margin: 0px 25px 0 25px;
     background-size: cover;
-
+    width: 1200px;
+    background-position: right;
+    display: flex;
 }
 .titulo2{
     font-weight: bold; 
@@ -119,7 +111,7 @@ a {
 }
 
 
-/* Por dafault el navegador usa display block e inline */
+/* Por default el navegador usa display block e inline */
 .direccion{
     display: flex;
     flex-direction: column;
@@ -251,4 +243,58 @@ footer {
     font-size: 20px;
     margin-top: 25px;
     font-weight: bold;
+}
+
+/* Media - responsive design */
+@media screen and (max-width: 768px){
+    .titulo-principal{
+        font-size: 20px;
+    }
+    .container,.background{
+        width: 90%;
+    }
+    .bgr{
+        width: 100%;
+    }
+    .background{
+        background-position: center;
+    }
+    .navegador a{
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    .container-principal {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .formulario{
+        width: 90%;
+    }
+    .contenedor-campos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 0.2fr);
+    }
+    .campo{
+        margin-bottom: 10px;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1/1;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width: 1290px){
+    .background{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+    .bgr{
+        width: 100%;
+    }
+    
+    
 }
